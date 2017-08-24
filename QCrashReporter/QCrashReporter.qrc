@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="QCrashReporter">
+    </qresource>
+</RCC>
