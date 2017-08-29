@@ -9,7 +9,11 @@ QCrashReporter::QCrashReporter(QWidget *parent)
 
 void QCrashReporter::on_pushButton_clicked()
 {
-	//this example of null ptr crash...
-	int *ptr = nullptr;
-	*ptr = 12;
+	////Crash Examples
+
+	////Null Pointer
+	//int *ptr = nullptr;
+	//*ptr = 12;
+	//invalid memory
+	delete reinterpret_cast<QString*>(0xFEE1DEAD);
 }
